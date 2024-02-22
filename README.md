@@ -36,16 +36,30 @@ CLOUDINARY_FOLDER=<Your cloudinary folder contains video files>
 
 Sign up your free [Cloudinary](https://cloudinary.com/) account to get your Cloudinary details
 
+Also change the `next.config.js` file, to allow accessing files from cloudinary
+
+````
+remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/<NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME>/**",
+      },
+    ],
+```
+
 4. videos folder structure
 
 You will need to put videos in the following structure in the Cloudinary:
 
-```
-<CLOUDINARY_FOLDER>/<subfolder>/nhdp_<id>.mp4
-<CLOUDINARY_FOLDER>/<subfolder>/nhdp_<id>.webm
-<CLOUDINARY_FOLDER>/<subfolder>/hd1080p_<id>.mp4
-<CLOUDINARY_FOLDER>/<subfolder>/hd1080p_<id>.webm
-```
+````
+
+<CLOUDINARY*FOLDER>/<subfolder>/nhdp*<id>.mp4
+<CLOUDINARY*FOLDER>/<subfolder>/nhdp*<id>.webm
+<CLOUDINARY*FOLDER>/<subfolder>/hd1080p*<id>.mp4
+<CLOUDINARY*FOLDER>/<subfolder>/hd1080p*<id>.webm
+
+````
 
 ![cloudinary](./public/cloudinary.png)
 
@@ -57,7 +71,7 @@ If you prefer different logic of reading files, change the logic in `organizeVid
 
 ```shell
 yarn dev
-```
+````
 
 open `http://localhost:3000` for preview
 

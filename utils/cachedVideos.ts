@@ -3,7 +3,7 @@ import { VideoVersions } from "./types"
 
 let cachedResults
 
-const numberOfVideos = 20
+const numberOfVideos = 12
 
 export default function getVideos(results) {
   if (!cachedResults) {
