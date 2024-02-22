@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react"
 import Footer from "../components/Footer"
 import Bridge from "../components/Icons/Bridge"
 import Modal from "../components/Modal"
+import Nav from "../components/Nav"
 import Prompt from "../components/Prompt"
 import getResults from "../utils/cachedImages"
 import getVideosList from "../utils/getVideosList"
@@ -36,6 +37,7 @@ const Home: NextPage = ({ videos }: { videos: VideoProps[] }) => {
         <meta property="og:image" content="/icon.png" />
         <meta name="twitter:image" content="/icon.png" />
       </Head>
+      <Nav />
       <main className="mx-auto max-w-[1960px] p-4">
         {videoId && (
           <Modal
