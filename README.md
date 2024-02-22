@@ -6,7 +6,7 @@ Sora Next Web
 
 [https://web.getsoraapp.com](https://web.getsoraapp.com)
 
-![preview](./og-image.png)
+![preview](./public/og-image.png)
 
 ## Quick Start
 
@@ -47,7 +47,7 @@ You will need to put videos in the following structure in the Cloudinary:
 <CLOUDINARY_FOLDER>/<subfolder>/hd1080p_<id>.webm
 ```
 
-![cloudinary](./cloudinary.png)
+![cloudinary](./public/cloudinary.png)
 
 Where video file starts `nhdp_` for preview and `hd1080p_` for details view.
 
